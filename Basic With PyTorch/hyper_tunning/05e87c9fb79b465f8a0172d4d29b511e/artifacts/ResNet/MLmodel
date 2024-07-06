@@ -1,0 +1,27 @@
+artifact_path: ResNet
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.10.13
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.2.1+cu121
+mlflow_version: 2.11.1
+model_size_bytes: 74144446
+model_uuid: e65ef1eb26104cbda28fdf7e1d679ef1
+run_id: 05e87c9fb79b465f8a0172d4d29b511e
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 1,
+    224, 224]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    36]}}]'
+  params: null
+utc_time_created: '2024-04-04 15:22:21.482612'
